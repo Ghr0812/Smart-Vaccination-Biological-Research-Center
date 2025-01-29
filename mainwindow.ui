@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1719</width>
+    <height>1091</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font-size: 36px; font-weight: bold; 
+        color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, 
+        stop:0 #8E44AD, stop:1 #3498DB);
+        text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+        margin-bottom: 30px;
+QWidget {
+    overflow: hidden;
+border: none;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>20</y>
+      <width>891</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Smart Vaccination &amp; Biological Research Center</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>241</width>
+      <height>881</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+            background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+            stop:0 #16A085, stop:1 #1ABC9C);
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 15px 25px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        QPushButton:hover {
+            transform: scale(1.05);
+            box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+            background: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, 
+            stop:0 #1ABC9C, stop:1 #16A085);
+        }
+        QPushButton:pressed {
+           transform: scale(0.95);
+        }</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="b1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>211</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Patients</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="b2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>170</y>
+       <width>211</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Vaccins</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="b3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>280</y>
+       <width>211</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Docteur</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="b4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>380</y>
+       <width>211</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Centre_Vaccination</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="b5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>480</y>
+       <width>211</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Vaccination</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="b6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>580</y>
+       <width>211</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>RendezVous</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>150</y>
+      <width>1451</width>
+      <height>881</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QProgressBar {
+           border: 3px solid #8E44AD;
+            border-radius: 15px;
+           text-align: center;
+           font-size: 16px;
+           background-color: #F5F7FA;
+        }
+        QProgressBar::chunk {
+            background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+            stop:0 #3498DB, stop:1 #2ECC71);
+            border-radius: 12px;
+        };</string>
+    </property>
+    <widget class="QProgressBar" name="progressBar">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>80</y>
+       <width>1061</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>75</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>10</y>
+       <width>501</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 20px; font-weight: bold; color: #27AE60; margin-bottom: 10px;</string>
+     </property>
+     <property name="text">
+      <string>Vaccination Progress</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="D">
+     <property name="geometry">
+      <rect>
+       <x>1290</x>
+       <y>10</y>
+       <width>101</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>dark</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="L">
+     <property name="geometry">
+      <rect>
+       <x>1130</x>
+       <y>0</y>
+       <width>131</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Light</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="horizontalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>160</y>
+       <width>1041</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout"/>
+    </widget>
+    <widget class="QWidget" name="horizontalLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>440</y>
+       <width>1041</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2"/>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>10</y>
+      <width>221</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
