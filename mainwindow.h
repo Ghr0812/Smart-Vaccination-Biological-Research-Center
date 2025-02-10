@@ -2,6 +2,16 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "Projet_Recherche/main_projet.h"
+#include <QtCharts/QChartView>
+#include <QtCharts/QLineSeries>
+#include <QtCharts/QBarSeries>
+#include <QtCharts/QPieSeries>
+#include <QtCharts/QValueAxis>
+#include <QtCharts/QBarCategoryAxis>
+#include <QVBoxLayout>
+#include <QGraphicsDropShadowEffect>
+#include <QtCharts/QBarSet>
 #include <QLabel>
 #include <QPixmap>
 
@@ -22,8 +32,13 @@ public:
 private slots:
     void on_D_toggled(bool checked);
     void on_L_toggled(bool checked);
+    void on_b6_clicked();
+
+    void on_b4_clicked();
+
 private:
     Ui::MainWindow *ui;
+    main_projet *pr;
 };
 
 #endif // MAINWINDOW_H

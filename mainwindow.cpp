@@ -1,16 +1,5 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include <QtCharts/QChartView>
-#include <QtCharts/QLineSeries>
-#include <QtCharts/QBarSeries>
-#include <QtCharts/QPieSeries>
-#include <QtCharts/QValueAxis>
-#include <QtCharts/QBarCategoryAxis>
-#include <QVBoxLayout>
-#include <QGraphicsDropShadowEffect>
-#include <QtCharts/QBarSet>
-#include <QLabel>
-#include <QPixmap>
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -18,9 +7,11 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    setWindowTitle("NextGen");
+    setWindowTitle("Smart Vaccination & Biological Research Center");
     createCharts();
     afficherImageDansQLabel(ui->label_3);
+    pr = new main_projet(this);
+    pr->hide();
 }
 
 
@@ -40,7 +31,7 @@ void MainWindow::on_D_toggled(bool checked)
 
 
 void MainWindow::afficherImageDansQLabel(QLabel* label) {
-    QPixmap pixmap("C:/Users/Windows/Desktop/Projet c++/NextGen/resources images/logo.png");
+    QPixmap pixmap("resources/logo.png");
 
     if (pixmap.isNull()) {
         qDebug() << "Échec du chargement de l'image.";
@@ -117,4 +108,54 @@ void MainWindow::on_L_toggled(bool checked)
                             "QLineEdit { background-color: white; color: black; border: 1px solid #888888; }");
     }
 }
+
+
+void MainWindow::on_b6_clicked()
+{
+    this->close();
+}
+
+
+void MainWindow::on_b4_clicked()
+{
+    qDebug() << "Button clicked";
+
+    if (!ui->widget) {
+        qWarning() << "widget is null!";
+        return;
+    }
+
+    if (!pr) {
+        qWarning() << "pr is null!";
+        return;
+    }
+
+
+    QLayout *currentLayout = ui->widget->layout();
+    if (currentLayout) {
+        qDebug() << "Clearing existing layout";
+        QLayoutItem *item;
+        while ((item = currentLayout->takeAt(0)) != nullptr) {
+            if (QWidget *widget = item->widget()) {
+                widget->setParent(nullptr);
+            }
+            delete item;
+        }
+        delete currentLayout;
+    }
+    ui->progressBar->hide();
+    if (ui->label_2 != nullptr) {
+        delete ui->label_2;
+        ui->label_2 = nullptr;
+    }
+
+    qDebug() << "Creating new layout";
+    QVBoxLayout *newLayout = new QVBoxLayout();
+    ui->widget->setLayout(newLayout);
+
+    qDebug() << "Adding pr to layout";
+    newLayout->addWidget(pr);
+    pr->show();
+}
+
 

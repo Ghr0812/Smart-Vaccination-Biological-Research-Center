@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1719</width>
-    <height>1091</height>
+    <width>1882</width>
+    <height>1252</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -42,8 +42,8 @@ border: none;
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>150</y>
-      <width>241</width>
+      <y>200</y>
+      <width>261</width>
       <height>881</height>
      </rect>
     </property>
@@ -76,91 +76,94 @@ border: none;
     <property name="frameShadow">
      <enum>QFrame::Shadow::Raised</enum>
     </property>
-    <widget class="QPushButton" name="b1">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>50</y>
-       <width>211</width>
-       <height>71</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Patients</string>
-     </property>
-    </widget>
     <widget class="QPushButton" name="b2">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>170</y>
-       <width>211</width>
+       <y>180</y>
+       <width>250</width>
        <height>71</height>
       </rect>
      </property>
      <property name="text">
-      <string>Vaccins</string>
+      <string>gestion des vaccins</string>
      </property>
     </widget>
     <widget class="QPushButton" name="b3">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>280</y>
-       <width>211</width>
+       <y>320</y>
+       <width>250</width>
        <height>71</height>
       </rect>
      </property>
      <property name="text">
-      <string>Docteur</string>
+      <string>gestion des docteurs</string>
      </property>
     </widget>
     <widget class="QPushButton" name="b4">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>380</y>
-       <width>211</width>
+       <y>440</y>
+       <width>250</width>
        <height>71</height>
       </rect>
      </property>
      <property name="text">
-      <string>Centre_Vaccination</string>
+      <string>gestion des recherches</string>
      </property>
     </widget>
     <widget class="QPushButton" name="b5">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>480</y>
-       <width>211</width>
+       <y>580</y>
+       <width>250</width>
        <height>71</height>
       </rect>
      </property>
      <property name="text">
-      <string>Vaccination</string>
+      <string>gestion des  utilisateurs</string>
      </property>
     </widget>
     <widget class="QPushButton" name="b6">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>580</y>
-       <width>211</width>
+       <y>720</y>
+       <width>250</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>sortie</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="b1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>250</width>
        <height>71</height>
       </rect>
      </property>
      <property name="text">
-      <string>RendezVous</string>
+      <string>gestion des patients</string>
      </property>
     </widget>
    </widget>
    <widget class="QWidget" name="widget" native="true">
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>150</y>
-      <width>1451</width>
+      <x>280</x>
+      <y>200</y>
+      <width>1490</width>
       <height>881</height>
      </rect>
     </property>
@@ -196,9 +199,9 @@ QProgressBar {
      <property name="geometry">
       <rect>
        <x>480</x>
-       <y>10</y>
+       <y>20</y>
        <width>501</width>
-       <height>81</height>
+       <height>41</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -206,32 +209,6 @@ QProgressBar {
      </property>
      <property name="text">
       <string>Vaccination Progress</string>
-     </property>
-    </widget>
-    <widget class="QRadioButton" name="D">
-     <property name="geometry">
-      <rect>
-       <x>1290</x>
-       <y>10</y>
-       <width>101</width>
-       <height>61</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>dark</string>
-     </property>
-    </widget>
-    <widget class="QRadioButton" name="L">
-     <property name="geometry">
-      <rect>
-       <x>1130</x>
-       <y>0</y>
-       <width>131</width>
-       <height>91</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Light</string>
      </property>
     </widget>
     <widget class="QWidget" name="horizontalLayoutWidget">
@@ -260,14 +237,40 @@ QProgressBar {
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>20</x>
       <y>10</y>
-      <width>221</width>
-      <height>131</height>
+      <width>241</width>
+      <height>181</height>
      </rect>
     </property>
     <property name="text">
      <string/>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="L">
+    <property name="geometry">
+     <rect>
+      <x>1550</x>
+      <y>30</y>
+      <width>71</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>☀️</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="D">
+    <property name="geometry">
+     <rect>
+      <x>1630</x>
+      <y>30</y>
+      <width>71</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>🔅</string>
     </property>
    </widget>
   </widget>

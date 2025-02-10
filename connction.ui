@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Connction</class>
+ <widget class="QMainWindow" name="Connction">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>895</width>
+    <height>593</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>541</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{background-color:#D4E6F1 ;
+}
+QLabel
+{
+color:red;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>390</y>
+       <width>401</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Sans Serif Collection</family>
+       <pointsize>25</pointsize>
+       <italic>true</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: white /* Couleur par défaut */
+    font-size: 14px;
+    font-weight: normal;
+}
+
+QLabel:hover {
+    color: red; /* Changer la couleur du texte au survol */
+    font-size: 16px; /* Augmenter légèrement la taille du texte */
+    font-weight: bold; /* Mettre en gras */
+}
+QLabel {
+    font-size: 14px;  /* Taille normale */
+    transition: font-size 0.3s ease-in-out; /* Animation fluide */
+}
+
+QLabel:hover {
+    font-size: 20px;  /* Taille agrandie quand la souris passe */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Bienvenue à VEXORA !</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>90</y>
+       <width>341</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>10</y>
+      <width>321</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="con">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>330</y>
+       <width>251</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+            background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+            stop:0 #16A085, stop:1 #1ABC9C);
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 15px 25px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        QPushButton:hover {
+            transform: scale(1.05);
+            box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+            background: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, 
+            stop:0 #1ABC9C, stop:1 #16A085);
+        }
+        QPushButton:pressed {
+           transform: scale(0.95);
+        }</string>
+     </property>
+     <property name="text">
+      <string>se connecter</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>200</y>
+       <width>150</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>14</pointsize>
+       <italic>true</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{color:grey;
+background-color: transparent;}</string>
+     </property>
+     <property name="text">
+      <string>mot de passe:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>50</y>
+       <width>291</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bookman Old Style</family>
+       <pointsize>20</pointsize>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{color :rgb(19, 23, 82);
+font:bold;
+background-color: transparent;}</string>
+     </property>
+     <property name="text">
+      <string>Se Connecter</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>361</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <italic>true</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+background-color:transparent;
+font:italic;
+color:rgb(51, 65, 100);
+}</string>
+     </property>
+     <property name="text">
+      <string>connectez-vous avec vos identifiants pour accéder 
+ à votre compte</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>14</pointsize>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{color :grey;
+font:bold;
+background-color: transparent;}</string>
+     </property>
+     <property name="text">
+      <string>utlisateur:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>270</y>
+       <width>131</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{background-color:black;
+color : black :}</string>
+     </property>
+     <property name="text">
+      <string>mot de passe oublié?</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>231</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>-1</pointsize>
+       <italic>true</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    font-size: 14px;  /* Texte principal */
+    font-family: &quot;Segoe UI&quot;, sans-serif;
+    padding: 6px 10px;  /* Espacement interne */
+    border: 2px solid #ccc; /* Bordure légère */
+    border-radius: 8px;  /* Coins arrondis */
+    background-color: #f9f9f9;  /* Fond doux */
+    color: #333;  /* Couleur du texte */
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* Placeholder moderne */
+QLineEdit::placeholder {
+    font-size: 12px;
+    color: #888;
+    font-style: italic;
+}
+
+/* Effet lors du focus */
+QLineEdit:focus {
+    border-color: #0078d7;  /* Bleu premium */
+    background-color: #ffffff;
+    outline: none;
+}
+</string>
+     </property>
+     <property name="placeholderText">
+      <string>Enter your username </string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>220</y>
+       <width>231</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>-1</pointsize>
+       <italic>true</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    font-size: 14px;  /* Texte principal */
+    font-family: &quot;Segoe UI&quot;, sans-serif;
+    padding: 6px 10px;  /* Espacement interne */
+    border: 2px solid #ccc; /* Bordure légère */
+    border-radius: 8px;  /* Coins arrondis */
+    background-color: #f9f9f9;  /* Fond doux */
+    color: #333;  /* Couleur du texte */
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* Placeholder moderne */
+QLineEdit::placeholder {
+    font-size: 12px;
+    color: #888;
+    font-style: italic;
+}
+
+/* Effet lors du focus */
+QLineEdit:focus {
+    border-color: #0078d7;  /* Bleu premium */
+    background-color: #ffffff;
+    outline: none;
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::EchoMode::Password</enum>
+     </property>
+     <property name="placeholderText">
+      <string>Password</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>895</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
