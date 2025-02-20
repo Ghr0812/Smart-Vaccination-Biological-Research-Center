@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1882</width>
+    <width>1909</width>
     <height>1252</height>
    </rect>
   </property>
@@ -38,132 +38,12 @@ border: none;
      <string>Smart Vaccination &amp; Biological Research Center</string>
     </property>
    </widget>
-   <widget class="QFrame" name="frame">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>200</y>
-      <width>261</width>
-      <height>881</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton {
-            background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
-            stop:0 #16A085, stop:1 #1ABC9C);
-            color: white;
-            font-size: 18px;
-            font-weight: bold;
-            padding: 15px 25px;
-            border-radius: 12px;
-            margin-bottom: 15px;
-            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        QPushButton:hover {
-            transform: scale(1.05);
-            box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
-            background: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, 
-            stop:0 #1ABC9C, stop:1 #16A085);
-        }
-        QPushButton:pressed {
-           transform: scale(0.95);
-        }</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Shape::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Shadow::Raised</enum>
-    </property>
-    <widget class="QPushButton" name="b2">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>180</y>
-       <width>250</width>
-       <height>71</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>gestion des vaccins</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="b3">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>320</y>
-       <width>250</width>
-       <height>71</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>gestion des docteurs</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="b4">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>440</y>
-       <width>250</width>
-       <height>71</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>gestion des recherches</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="b5">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>580</y>
-       <width>250</width>
-       <height>71</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>gestion des  utilisateurs</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="b6">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>720</y>
-       <width>250</width>
-       <height>71</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true"/>
-     </property>
-     <property name="text">
-      <string>sortie</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="b1">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>20</y>
-       <width>250</width>
-       <height>71</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>gestion des patients</string>
-     </property>
-    </widget>
-   </widget>
    <widget class="QWidget" name="widget" native="true">
     <property name="geometry">
      <rect>
-      <x>280</x>
+      <x>320</x>
       <y>200</y>
-      <width>1490</width>
+      <width>1651</width>
       <height>881</height>
      </rect>
     </property>
@@ -272,6 +152,315 @@ QProgressBar {
     <property name="text">
      <string>🔅</string>
     </property>
+   </widget>
+   <widget class="QWidget" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>170</y>
+      <width>291</width>
+      <height>881</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+            background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+            stop:0 #16A085, stop:1 #1ABC9C);
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 15px 25px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        QPushButton:hover {
+            transform: scale(1.05);
+            box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+            background: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, 
+            stop:0 #1ABC9C, stop:1 #16A085);
+        }
+        QPushButton:pressed {
+           transform: scale(0.95);
+        }</string>
+    </property>
+    <widget class="QPushButton" name="b1">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>260</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+            background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+            stop:0 #16A085, stop:1 #1ABC9C);
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 15px 25px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        QPushButton:hover {
+            transform: scale(1.05);
+            box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+            background: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, 
+            stop:0 #1ABC9C, stop:1 #16A085);
+        }
+        QPushButton:pressed {
+           transform: scale(0.95);
+        }</string>
+     </property>
+     <property name="text">
+      <string>gestion des patients</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>resources/patients.png</normaloff>resources/patients.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>35</width>
+       <height>35</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="b3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>500</y>
+       <width>261</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+            background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+            stop:0 #16A085, stop:1 #1ABC9C);
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 15px 25px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        QPushButton:hover {
+            transform: scale(1.05);
+            box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+            background: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, 
+            stop:0 #1ABC9C, stop:1 #16A085);
+        }
+        QPushButton:pressed {
+           transform: scale(0.95);
+        }</string>
+     </property>
+     <property name="text">
+      <string>gestion des docteurs</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>resources/docteur.png</normaloff>resources/docteur.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>35</width>
+       <height>35</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="b5">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>640</y>
+       <width>260</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+            background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+            stop:0 #16A085, stop:1 #1ABC9C);
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 15px 25px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        QPushButton:hover {
+            transform: scale(1.05);
+            box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+            background: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, 
+            stop:0 #1ABC9C, stop:1 #16A085);
+        }
+        QPushButton:pressed {
+           transform: scale(0.95);
+        }</string>
+     </property>
+     <property name="text">
+      <string>gestion des  utilisateurs</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>resources/user.png</normaloff>resources/user.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>35</width>
+       <height>35</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="b2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>200</y>
+       <width>260</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+            background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+            stop:0 #16A085, stop:1 #1ABC9C);
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 15px 25px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        QPushButton:hover {
+            transform: scale(1.05);
+            box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+            background: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, 
+            stop:0 #1ABC9C, stop:1 #16A085);
+        }
+        QPushButton:pressed {
+           transform: scale(0.95);
+        }</string>
+     </property>
+     <property name="text">
+      <string>gestion des vaccins</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>resources/vaccination.png</normaloff>resources/vaccination.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>35</width>
+       <height>35</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="b4">
+     <property name="geometry">
+      <rect>
+       <x>19</x>
+       <y>350</y>
+       <width>261</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+            background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+            stop:0 #16A085, stop:1 #1ABC9C);
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 15px 25px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        QPushButton:hover {
+            transform: scale(1.05);
+            box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+            background: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, 
+            stop:0 #1ABC9C, stop:1 #16A085);
+        }
+        QPushButton:pressed {
+           transform: scale(0.95);
+        }</string>
+     </property>
+     <property name="text">
+      <string>gestion des recherches</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>resources/projet.png</normaloff>resources/projet.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>35</width>
+       <height>35</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="b6">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>763</y>
+       <width>260</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+            background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+            stop:0 #16A085, stop:1 #1ABC9C);
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 15px 25px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        QPushButton:hover {
+            transform: scale(1.05);
+            box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+            background: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, 
+            stop:0 #1ABC9C, stop:1 #16A085);
+        }
+        QPushButton:pressed {
+           transform: scale(0.95);
+        }</string>
+     </property>
+     <property name="text">
+      <string>sortie</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>resources/exit.png</normaloff>resources/exit.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>35</width>
+       <height>35</height>
+      </size>
+     </property>
+    </widget>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>

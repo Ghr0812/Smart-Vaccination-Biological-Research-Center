@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 6.8.1
+** Created by: Qt User Interface Compiler version 6.8.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,8 +10,8 @@
 #define UI_MAINWINDOW_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QFrame>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
@@ -28,13 +28,6 @@ class Ui_MainWindow
 public:
     QWidget *centralwidget;
     QLabel *label;
-    QFrame *frame;
-    QPushButton *b2;
-    QPushButton *b3;
-    QPushButton *b4;
-    QPushButton *b5;
-    QPushButton *b6;
-    QPushButton *b1;
     QWidget *widget;
     QProgressBar *progressBar;
     QLabel *label_2;
@@ -45,13 +38,20 @@ public:
     QLabel *label_3;
     QRadioButton *L;
     QRadioButton *D;
+    QWidget *widget_2;
+    QPushButton *b1;
+    QPushButton *b3;
+    QPushButton *b5;
+    QPushButton *b2;
+    QPushButton *b4;
+    QPushButton *b6;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(1882, 1252);
+        MainWindow->resize(1909, 1252);
         MainWindow->setStyleSheet(QString::fromUtf8("font-size: 36px; font-weight: bold; \n"
 "        color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, \n"
 "        stop:0 #8E44AD, stop:1 #3498DB);\n"
@@ -66,54 +66,9 @@ public:
         label = new QLabel(centralwidget);
         label->setObjectName("label");
         label->setGeometry(QRect(430, 20, 891, 91));
-        frame = new QFrame(centralwidget);
-        frame->setObjectName("frame");
-        frame->setGeometry(QRect(10, 200, 261, 881));
-        frame->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"            background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, \n"
-"            stop:0 #16A085, stop:1 #1ABC9C);\n"
-"            color: white;\n"
-"            font-size: 18px;\n"
-"            font-weight: bold;\n"
-"            padding: 15px 25px;\n"
-"            border-radius: 12px;\n"
-"            margin-bottom: 15px;\n"
-"            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);\n"
-"            transition: transform 0.2s, box-shadow 0.2s;\n"
-"        }\n"
-"        QPushButton:hover {\n"
-"            transform: scale(1.05);\n"
-"            box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);\n"
-"            background: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, \n"
-"            stop:0 #1ABC9C, stop:1 #16A085);\n"
-"        }\n"
-"        QPushButton:pressed {\n"
-"           transform: scale(0.95);\n"
-"        }"));
-        frame->setFrameShape(QFrame::Shape::StyledPanel);
-        frame->setFrameShadow(QFrame::Shadow::Raised);
-        b2 = new QPushButton(frame);
-        b2->setObjectName("b2");
-        b2->setGeometry(QRect(10, 180, 250, 71));
-        b3 = new QPushButton(frame);
-        b3->setObjectName("b3");
-        b3->setGeometry(QRect(10, 320, 250, 71));
-        b4 = new QPushButton(frame);
-        b4->setObjectName("b4");
-        b4->setGeometry(QRect(10, 440, 250, 71));
-        b5 = new QPushButton(frame);
-        b5->setObjectName("b5");
-        b5->setGeometry(QRect(10, 580, 250, 71));
-        b6 = new QPushButton(frame);
-        b6->setObjectName("b6");
-        b6->setGeometry(QRect(10, 720, 250, 71));
-        b6->setStyleSheet(QString::fromUtf8(""));
-        b1 = new QPushButton(frame);
-        b1->setObjectName("b1");
-        b1->setGeometry(QRect(10, 20, 250, 71));
         widget = new QWidget(centralwidget);
         widget->setObjectName("widget");
-        widget->setGeometry(QRect(280, 200, 1490, 881));
+        widget->setGeometry(QRect(320, 200, 1651, 881));
         widget->setStyleSheet(QString::fromUtf8("\n"
 "QProgressBar {\n"
 "           border: 3px solid #8E44AD;\n"
@@ -156,6 +111,198 @@ public:
         D = new QRadioButton(centralwidget);
         D->setObjectName("D");
         D->setGeometry(QRect(1630, 30, 71, 81));
+        widget_2 = new QWidget(centralwidget);
+        widget_2->setObjectName("widget_2");
+        widget_2->setGeometry(QRect(19, 170, 291, 881));
+        widget_2->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"            background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, \n"
+"            stop:0 #16A085, stop:1 #1ABC9C);\n"
+"            color: white;\n"
+"            font-size: 18px;\n"
+"            font-weight: bold;\n"
+"            padding: 15px 25px;\n"
+"            border-radius: 12px;\n"
+"            margin-bottom: 15px;\n"
+"            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);\n"
+"            transition: transform 0.2s, box-shadow 0.2s;\n"
+"        }\n"
+"        QPushButton:hover {\n"
+"            transform: scale(1.05);\n"
+"            box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);\n"
+"            background: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, \n"
+"            stop:0 #1ABC9C, stop:1 #16A085);\n"
+"        }\n"
+"        QPushButton:pressed {\n"
+"           transform: scale(0.95);\n"
+"        }"));
+        b1 = new QPushButton(widget_2);
+        b1->setObjectName("b1");
+        b1->setGeometry(QRect(20, 70, 260, 71));
+        b1->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"            background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, \n"
+"            stop:0 #16A085, stop:1 #1ABC9C);\n"
+"            color: white;\n"
+"            font-size: 15px;\n"
+"            font-weight: bold;\n"
+"            padding: 15px 25px;\n"
+"            border-radius: 12px;\n"
+"            margin-bottom: 15px;\n"
+"            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);\n"
+"            transition: transform 0.2s, box-shadow 0.2s;\n"
+"        }\n"
+"        QPushButton:hover {\n"
+"            transform: scale(1.05);\n"
+"            box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);\n"
+"            background: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, \n"
+"            stop:0 #1ABC9C, stop:1 #16A085);\n"
+"        }\n"
+"        QPushButton:pressed {\n"
+"           transform: scale(0.95);\n"
+"        }"));
+        QIcon icon;
+        icon.addFile(QString::fromUtf8("resources/patients.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
+        b1->setIcon(icon);
+        b1->setIconSize(QSize(35, 35));
+        b3 = new QPushButton(widget_2);
+        b3->setObjectName("b3");
+        b3->setGeometry(QRect(20, 500, 261, 71));
+        b3->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"            background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, \n"
+"            stop:0 #16A085, stop:1 #1ABC9C);\n"
+"            color: white;\n"
+"            font-size: 15px;\n"
+"            font-weight: bold;\n"
+"            padding: 15px 25px;\n"
+"            border-radius: 12px;\n"
+"            margin-bottom: 15px;\n"
+"            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);\n"
+"            transition: transform 0.2s, box-shadow 0.2s;\n"
+"        }\n"
+"        QPushButton:hover {\n"
+"            transform: scale(1.05);\n"
+"            box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);\n"
+"            background: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, \n"
+"            stop:0 #1ABC9C, stop:1 #16A085);\n"
+"        }\n"
+"        QPushButton:pressed {\n"
+"           transform: scale(0.95);\n"
+"        }"));
+        QIcon icon1;
+        icon1.addFile(QString::fromUtf8("resources/docteur.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
+        b3->setIcon(icon1);
+        b3->setIconSize(QSize(35, 35));
+        b5 = new QPushButton(widget_2);
+        b5->setObjectName("b5");
+        b5->setGeometry(QRect(20, 640, 260, 71));
+        b5->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"            background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, \n"
+"            stop:0 #16A085, stop:1 #1ABC9C);\n"
+"            color: white;\n"
+"            font-size: 15px;\n"
+"            font-weight: bold;\n"
+"            padding: 15px 25px;\n"
+"            border-radius: 12px;\n"
+"            margin-bottom: 15px;\n"
+"            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);\n"
+"            transition: transform 0.2s, box-shadow 0.2s;\n"
+"        }\n"
+"        QPushButton:hover {\n"
+"            transform: scale(1.05);\n"
+"            box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);\n"
+"            background: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, \n"
+"            stop:0 #1ABC9C, stop:1 #16A085);\n"
+"        }\n"
+"        QPushButton:pressed {\n"
+"           transform: scale(0.95);\n"
+"        }"));
+        QIcon icon2;
+        icon2.addFile(QString::fromUtf8("resources/user.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
+        b5->setIcon(icon2);
+        b5->setIconSize(QSize(35, 35));
+        b2 = new QPushButton(widget_2);
+        b2->setObjectName("b2");
+        b2->setGeometry(QRect(20, 200, 260, 71));
+        b2->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"            background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, \n"
+"            stop:0 #16A085, stop:1 #1ABC9C);\n"
+"            color: white;\n"
+"            font-size: 15px;\n"
+"            font-weight: bold;\n"
+"            padding: 15px 25px;\n"
+"            border-radius: 12px;\n"
+"            margin-bottom: 15px;\n"
+"            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);\n"
+"            transition: transform 0.2s, box-shadow 0.2s;\n"
+"        }\n"
+"        QPushButton:hover {\n"
+"            transform: scale(1.05);\n"
+"            box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);\n"
+"            background: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, \n"
+"            stop:0 #1ABC9C, stop:1 #16A085);\n"
+"        }\n"
+"        QPushButton:pressed {\n"
+"           transform: scale(0.95);\n"
+"        }"));
+        QIcon icon3;
+        icon3.addFile(QString::fromUtf8("resources/vaccination.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
+        b2->setIcon(icon3);
+        b2->setIconSize(QSize(35, 35));
+        b4 = new QPushButton(widget_2);
+        b4->setObjectName("b4");
+        b4->setGeometry(QRect(19, 350, 261, 71));
+        b4->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"            background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, \n"
+"            stop:0 #16A085, stop:1 #1ABC9C);\n"
+"            color: white;\n"
+"            font-size: 15px;\n"
+"            font-weight: bold;\n"
+"            padding: 15px 25px;\n"
+"            border-radius: 12px;\n"
+"            margin-bottom: 15px;\n"
+"            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);\n"
+"            transition: transform 0.2s, box-shadow 0.2s;\n"
+"        }\n"
+"        QPushButton:hover {\n"
+"            transform: scale(1.05);\n"
+"            box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);\n"
+"            background: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, \n"
+"            stop:0 #1ABC9C, stop:1 #16A085);\n"
+"        }\n"
+"        QPushButton:pressed {\n"
+"           transform: scale(0.95);\n"
+"        }"));
+        QIcon icon4;
+        icon4.addFile(QString::fromUtf8("resources/projet.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
+        b4->setIcon(icon4);
+        b4->setIconSize(QSize(35, 35));
+        b6 = new QPushButton(widget_2);
+        b6->setObjectName("b6");
+        b6->setGeometry(QRect(20, 763, 260, 71));
+        b6->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"            background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, \n"
+"            stop:0 #16A085, stop:1 #1ABC9C);\n"
+"            color: white;\n"
+"            font-size: 15px;\n"
+"            font-weight: bold;\n"
+"            padding: 15px 25px;\n"
+"            border-radius: 12px;\n"
+"            margin-bottom: 15px;\n"
+"            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);\n"
+"            transition: transform 0.2s, box-shadow 0.2s;\n"
+"        }\n"
+"        QPushButton:hover {\n"
+"            transform: scale(1.05);\n"
+"            box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);\n"
+"            background: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, \n"
+"            stop:0 #1ABC9C, stop:1 #16A085);\n"
+"        }\n"
+"        QPushButton:pressed {\n"
+"           transform: scale(0.95);\n"
+"        }"));
+        QIcon icon5;
+        icon5.addFile(QString::fromUtf8("resources/exit.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
+        b6->setIcon(icon5);
+        b6->setIconSize(QSize(35, 35));
         MainWindow->setCentralWidget(centralwidget);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");
@@ -170,16 +317,16 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "Smart Vaccination & Biological Research Center", nullptr));
-        b2->setText(QCoreApplication::translate("MainWindow", "gestion des vaccins", nullptr));
-        b3->setText(QCoreApplication::translate("MainWindow", "gestion des docteurs", nullptr));
-        b4->setText(QCoreApplication::translate("MainWindow", "gestion des recherches", nullptr));
-        b5->setText(QCoreApplication::translate("MainWindow", "gestion des  utilisateurs", nullptr));
-        b6->setText(QCoreApplication::translate("MainWindow", "sortie", nullptr));
-        b1->setText(QCoreApplication::translate("MainWindow", "gestion des patients", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "Vaccination Progress", nullptr));
         label_3->setText(QString());
         L->setText(QCoreApplication::translate("MainWindow", "\342\230\200\357\270\217", nullptr));
         D->setText(QCoreApplication::translate("MainWindow", "\360\237\224\205", nullptr));
+        b1->setText(QCoreApplication::translate("MainWindow", "gestion des patients", nullptr));
+        b3->setText(QCoreApplication::translate("MainWindow", "gestion des docteurs", nullptr));
+        b5->setText(QCoreApplication::translate("MainWindow", "gestion des  utilisateurs", nullptr));
+        b2->setText(QCoreApplication::translate("MainWindow", "gestion des vaccins", nullptr));
+        b4->setText(QCoreApplication::translate("MainWindow", "gestion des recherches", nullptr));
+        b6->setText(QCoreApplication::translate("MainWindow", "sortie", nullptr));
     } // retranslateUi
 
 };

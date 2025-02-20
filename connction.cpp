@@ -29,11 +29,10 @@ void Connction::on_con_clicked()
 
 
 void Connction::afficherImageDansQLabel(QLabel* label) {
-    QPixmap pixmap("resources/logo.png");
+    QPixmap pixmap("Y:/Smart-Vaccination-Biological-Research-Center/NextGen/resources/logo.png");
 
     if (pixmap.isNull()) {
-        qDebug() << "Échec du chargement de l'image.";
-        return;
+        qDebug() << "Erreur : Impossible de charger le logo ! Vérifiez le chemin.";
     }
 
     label->setPixmap(pixmap);

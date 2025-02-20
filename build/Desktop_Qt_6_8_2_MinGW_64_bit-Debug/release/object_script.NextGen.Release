@@ -1,0 +1,13 @@
+release/main_projet.o
+release/projet_de_rechcerche.o
+release/qrcode.o
+release/stats.o
+release/connction.o
+release/connect_db.o
+release/main.o
+release/mainwindow.o
+release/moc_main_projet.o
+release/moc_qrcode.o
+release/moc_stats.o
+release/moc_connction.o
+release/moc_mainwindow.o

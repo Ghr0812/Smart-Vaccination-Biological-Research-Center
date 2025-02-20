@@ -319,7 +319,7 @@ QLineEdit:focus {
 </string>
      </property>
      <property name="placeholderText">
-      <string>Enter your username </string>
+      <string>identifiant</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit_2">
@@ -373,7 +373,7 @@ QLineEdit:focus {
       <enum>QLineEdit::EchoMode::Password</enum>
      </property>
      <property name="placeholderText">
-      <string>Password</string>
+      <string>mot de passe</string>
      </property>
     </widget>
    </widget>
@@ -384,7 +384,7 @@ QLineEdit:focus {
      <x>0</x>
      <y>0</y>
      <width>895</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>

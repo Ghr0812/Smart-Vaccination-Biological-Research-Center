@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'connction.ui'
 **
-** Created by: Qt User Interface Compiler version 6.8.1
+** Created by: Qt User Interface Compiler version 6.8.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -243,7 +243,7 @@ public:
         Connction->setCentralWidget(centralwidget);
         menubar = new QMenuBar(Connction);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 895, 22));
+        menubar->setGeometry(QRect(0, 0, 895, 21));
         Connction->setMenuBar(menubar);
         statusbar = new QStatusBar(Connction);
         statusbar->setObjectName("statusbar");
@@ -266,9 +266,9 @@ public:
 " \303\240 votre compte", nullptr));
         label->setText(QCoreApplication::translate("Connction", "utlisateur:", nullptr));
         label_7->setText(QCoreApplication::translate("Connction", "mot de passe oubli\303\251?", nullptr));
-        lineEdit->setPlaceholderText(QCoreApplication::translate("Connction", "Enter your username ", nullptr));
+        lineEdit->setPlaceholderText(QCoreApplication::translate("Connction", "identifiant", nullptr));
         lineEdit_2->setText(QString());
-        lineEdit_2->setPlaceholderText(QCoreApplication::translate("Connction", "Password", nullptr));
+        lineEdit_2->setPlaceholderText(QCoreApplication::translate("Connction", "mot de passe", nullptr));
     } // retranslateUi
 
 };

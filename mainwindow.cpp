@@ -12,6 +12,10 @@ MainWindow::MainWindow(QWidget *parent)
     afficherImageDansQLabel(ui->label_3);
     pr = new main_projet(this);
     pr->hide();
+
+    clickSound = new QSoundEffect(this);
+    clickSound->setSource(QUrl::fromLocalFile("Y:/Smart-Vaccination-Biological-Research-Center/NextGen/resources/button.wav"));
+    clickSound->setVolume(0.8);
 }
 
 
@@ -27,11 +31,13 @@ void MainWindow::on_D_toggled(bool checked)
                             "QPushButton { background-color: #444444; color: white; border: none; padding: 5px; }"
                             "QLineEdit { background-color: #444444; color: white; border: 1px solid #888888; }");
     }
+
+    clickSound->play();
 }
 
 
 void MainWindow::afficherImageDansQLabel(QLabel* label) {
-    QPixmap pixmap("resources/logo.png");
+    QPixmap pixmap("Y:/Smart-Vaccination-Biological-Research-Center/NextGen/resources/logo.png");
 
     if (pixmap.isNull()) {
         qDebug() << "Échec du chargement de l'image.";
@@ -107,17 +113,21 @@ void MainWindow::on_L_toggled(bool checked)
                             "QPushButton { background-color: #DDDDDD; color: black; border: none; padding: 5px; }"
                             "QLineEdit { background-color: white; color: black; border: 1px solid #888888; }");
     }
+
+    clickSound->play();
 }
 
 
 void MainWindow::on_b6_clicked()
 {
+    clickSound->play();
     this->close();
 }
 
 
 void MainWindow::on_b4_clicked()
 {
+    clickSound->play();
     qDebug() << "Button clicked";
 
     if (!ui->widget) {
@@ -130,7 +140,7 @@ void MainWindow::on_b4_clicked()
         return;
     }
 
-
+    // Clearing the existing layout
     QLayout *currentLayout = ui->widget->layout();
     if (currentLayout) {
         qDebug() << "Clearing existing layout";
@@ -143,12 +153,17 @@ void MainWindow::on_b4_clicked()
         }
         delete currentLayout;
     }
+
+    // Hide progress bar and delete label_2
     ui->progressBar->hide();
     if (ui->label_2 != nullptr) {
         delete ui->label_2;
         ui->label_2 = nullptr;
     }
+    ui->horizontalLayoutWidget->hide();
+    ui->horizontalLayoutWidget_2->hide();
 
+    // Creating a new layout and adding 'pr'
     qDebug() << "Creating new layout";
     QVBoxLayout *newLayout = new QVBoxLayout();
     ui->widget->setLayout(newLayout);
@@ -157,5 +172,6 @@ void MainWindow::on_b4_clicked()
     newLayout->addWidget(pr);
     pr->show();
 }
+
 
 

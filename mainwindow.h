@@ -14,7 +14,7 @@
 #include <QtCharts/QBarSet>
 #include <QLabel>
 #include <QPixmap>
-
+#include <QSoundEffect>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -39,6 +39,8 @@ private slots:
 private:
     Ui::MainWindow *ui;
     main_projet *pr;
+    QSoundEffect *clickSound;
+
 };
 
 #endif // MAINWINDOW_H
